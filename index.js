@@ -9,3 +9,7 @@ app.use(cors());
 app.listen(port,()=>{
     console.log('server started');
 });
+
+app.get('/',(req,res)=>{
+    res.send('GET');
+})
